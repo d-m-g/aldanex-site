@@ -125,6 +125,7 @@ export const itCapabilities = [
       "Website development",
       "IT consulting and technical support",
     ],
+    fullWidth: true,
   },
 ];
 

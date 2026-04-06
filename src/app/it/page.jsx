@@ -5,7 +5,7 @@ import { itCapabilities } from "../../lib/content";
 import { createPageMetadata } from "../../lib/seo";
 
 export const metadata = createPageMetadata({
-  title: "IT",
+  title: "IT services",
   description:
     "IT services from Aldanex Group including SaaS development, digital marketing, and technical consulting.",
   path: "/it",
@@ -24,11 +24,10 @@ export default function ItPage() {
           "Cloud deployment across AWS and Google Cloud",
           "SEO, SMM, BI, and technical support capability",
         ]}
-        title="IT services for serious engineering and growth work."
+        title="IT services"
       />
       <OfferGridSection
         eyebrow="Capabilities"
-        intro="The live WordPress `/saas/` page content is now migrated into the cleaner `/it` route while preserving the existing service themes and technology stack."
         items={itCapabilities}
         title="Current Aldanex IT and digital service lines"
       />

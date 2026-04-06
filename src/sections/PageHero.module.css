@@ -10,7 +10,7 @@
 
 .description {
   max-width: 44rem;
-  margin-top: var(--space-5);
+  margin-top: var(--space-4);
   color: var(--color-muted);
   font-size: 1.05rem;
 }
@@ -19,7 +19,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3);
-  margin-top: var(--space-6);
+  margin-top: var(--space-5);
 }
 
 .card {
