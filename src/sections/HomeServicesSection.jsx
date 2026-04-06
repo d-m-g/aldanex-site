@@ -9,10 +9,11 @@ export default function HomeServicesSection() {
   return (
     <Section id="services" tone="accent">
       <div className={styles.intro}>
-        <Heading eyebrow="Our services">Aldanex Group service lines</Heading>
+        <Heading eyebrow="Our services">Six core service areas</Heading>
         <p className={styles.copy}>
-          The homepage now mirrors the current WordPress structure: property,
-          IT, digital marketing, and direct contact.
+          This section follows the homepage brief directly, with six service
+          cards covering hospitality, property, maintenance, digital marketing,
+          and IT.
         </p>
       </div>
       <div className={styles.grid}>

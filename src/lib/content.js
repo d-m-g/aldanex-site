@@ -5,6 +5,31 @@ export const companyFacts = [
   "Property and IT expertise under one group",
 ];
 
+export const homepageStats = [
+  "We speak 3 languages",
+  "Originated in 2016 year",
+  "More than 40 apartments for rent",
+  "Professional team",
+];
+
+export const groupCompanies = [
+  {
+    title: "Aldanex Group OY",
+    description:
+      "The wider group company for Rauhan Marinella Village, cottages and apartments, IT services, and property maintenance.",
+  },
+  {
+    title: "Aldanex Pro OY",
+    description:
+      "Focused on property long-term rent and practical real-estate operations within the Aldanex group.",
+  },
+  {
+    title: "Aldanex OY",
+    description:
+      "Supports IT services and digital marketing work for clients that need technical and growth support.",
+  },
+];
+
 export const contactInfo = {
   phone: "+358417587388",
   email: "info@aldanex.fi",
@@ -105,27 +130,39 @@ export const itCapabilities = [
 
 export const homepageServices = [
   {
-    title: "Property stays and rentals",
+    title: "Rauhan Marinella Village Hotel",
     description:
-      "Short-term and long-term apartment offerings in key Finnish locations, plus Rauhan Marinella Village hospitality.",
+      "Hotel accommodation close to Lake Saimaa with fully equipped apartments in peaceful forest surroundings.",
+    href: "https://rauhanvillage.com/",
+  },
+  {
+    title: "Property. Short-term rent",
+    description:
+      "Daily rental apartments in the Imatra and Lappeenranta area with multiple apartment sizes available.",
     href: "/property",
   },
   {
-    title: "Property maintenance",
+    title: "Property. Long-term rent",
     description:
-      "Ongoing care for private homes in Finland, including checks, post-box service, and bill handling.",
+      "Monthly apartment rental options in Helsinki and Imatra for longer-stay residents and tenants.",
     href: "/property",
   },
   {
-    title: "IT and SaaS delivery",
+    title: "Maintenance",
     description:
-      "Full-stack software development, cloud deployment, and longer-term team augmentation for ambitious products.",
-    href: "/it",
+      "House checks, post-box care, bill handling, and other maintenance support for private homes in Finland.",
+    href: "/property",
   },
   {
     title: "Digital marketing",
     description:
-      "SEO and social media marketing services built around strategy, creatives, campaigns, and optimization.",
+      "SEO and social media marketing support covering audits, content, creatives, campaigns, and optimization.",
+    href: "/it",
+  },
+  {
+    title: "IT Services",
+    description:
+      "Complex SaaS solutions, website development, consulting, analytics, and technical support.",
     href: "/it",
   },
 ];

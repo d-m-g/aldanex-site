@@ -1,31 +1,28 @@
-.layout {
-  display: grid;
-  gap: var(--space-6);
-  align-items: start;
+.intro {
+  margin-bottom: var(--space-6);
 }
 
-.text {
-  margin-top: var(--space-4);
-  max-width: 40rem;
-  color: var(--color-muted);
+.grid {
+  display: grid;
+  gap: var(--space-4);
 }
 
 .card {
   padding: var(--space-5);
 }
 
-.list {
-  display: grid;
-  gap: var(--space-3);
-  padding-left: 1.2rem;
+.title {
+  margin-bottom: var(--space-3);
+  font-size: 1.25rem;
+  letter-spacing: -0.03em;
 }
 
-.item {
+.text {
   color: var(--color-muted);
 }
 
-@media (min-width: 900px) {
-  .layout {
-    grid-template-columns: 1.3fr 0.9fr;
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
