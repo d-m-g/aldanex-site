@@ -5,17 +5,21 @@ export default function SiteFooter() {
   return (
     <footer className={styles.footer}>
       <Container className={styles.inner}>
-        <div>
-          <p className={styles.title}>Aldanex Group</p>
-          <p className={styles.copy}>
-            Property, IT, and digital services in Finland.
-          </p>
-        </div>
-        <div className={styles.meta}>
-          <p>+358417587388</p>
-          <p>info@aldanex.fi</p>
-          <p>Vipelenkuja 4, Rauha, 55320, Finland</p>
-        </div>
+        <p className={styles.companies}>
+          Aldanex Group OY, Y-tunnus 2743281-5 | Aldanex Pro OY, Y-tunnus 3213166-2 |
+          Aldanex OY, Y-tunnus 3280836-2
+        </p>
+        <p className={styles.copy}>© All rights reserved 2026</p>
+        <p>
+          <a className={styles.link} href="tel:+358417587388">
+            +358417587388
+          </a>
+        </p>
+        <p>
+          <a className={styles.link} href="mailto:info@aldanex.fi">
+            info@aldanex.fi
+          </a>
+        </p>
       </Container>
     </footer>
   );
