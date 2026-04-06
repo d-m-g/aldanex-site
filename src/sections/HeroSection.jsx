@@ -1,4 +1,3 @@
-import Button from "../components/Button";
 import Card from "../components/Card";
 import Heading from "../components/Heading";
 import Section from "../components/Section";
@@ -17,12 +16,6 @@ export default function HeroSection() {
             A single group presence for hospitality, rental apartments,
             maintenance support, SaaS development, and marketing services.
           </p>
-          <div className={styles.actions}>
-            <Button href="/#services">Our services</Button>
-            <Button href="/#contact" variant="secondary">
-              Contact us
-            </Button>
-          </div>
         </div>
         <Card className={styles.panel}>
           <p className={styles.panelLabel}>Main directions</p>
