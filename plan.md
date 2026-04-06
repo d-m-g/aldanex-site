@@ -93,13 +93,13 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 
 **Goal:** Ship business-critical pages with approved content.
 
-- [ ] Build homepage (`src/app/page.*`) using modular sections.
-- [ ] Build core static routes:
-  - [ ] `src/app/property/page.*`
-  - [ ] `src/app/it/page.*`
-- [ ] Rebuild the homepage contact section from the current WP site.
-- [ ] Migrate approved copy directly into code (hardcoded-first).
-- [ ] Ensure internal links and nav states are correct on all breakpoints.
+- [x] Build homepage (`src/app/page.*`) using modular sections.
+- [x] Build core static routes:
+  - [x] `src/app/property/page.*`
+  - [x] `src/app/it/page.*`
+- [x] Rebuild the homepage contact section from the current WP site.
+- [x] Migrate approved copy directly into code (hardcoded-first).
+- [x] Ensure internal links and nav states are correct on all breakpoints.
 
 **Deliverable:** Full MVP page set feature-complete and review-ready.
 

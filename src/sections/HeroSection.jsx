@@ -9,28 +9,28 @@ export default function HeroSection() {
     <Section className={styles.section}>
       <div className={styles.layout}>
         <div className={styles.copy}>
-          <p className={styles.kicker}>Aldanex.fi rebuild foundation</p>
+          <p className={styles.kicker}>Welcome to Aldanex Group</p>
           <Heading as="h1">
-            A calmer, sharper web presence for property and IT work.
+            Property, IT, and digital services under one group.
           </Heading>
           <p className={styles.lead}>
-            This homepage now uses the shared layout shell and reusable UI
-            primitives that will support the upcoming `property` and `it`
-            routes.
+            Aldanex Group brings together short-term and long-term rentals,
+            property maintenance, SaaS delivery, and digital marketing into one
+            focused company presence.
           </p>
           <div className={styles.actions}>
-            <Button href="#contact">Discuss the migration</Button>
-            <Button href="#focus" variant="secondary">
-              See the foundation
+            <Button href="/#contact">Contact us</Button>
+            <Button href="/property" variant="secondary">
+              Explore property
             </Button>
           </div>
         </div>
         <Card className={styles.panel}>
-          <p className={styles.panelLabel}>Phase 3 deliverable</p>
+          <p className={styles.panelLabel}>Current focus areas</p>
           <ul className={styles.points}>
-            <li>Shared header, footer, and responsive navigation</li>
-            <li>Reusable components ready for content migration</li>
-            <li>SEO helper utilities ready for page-level metadata</li>
+            <li>Rauhan Marinella Village and apartment rentals</li>
+            <li>Property maintenance for houses in Finland</li>
+            <li>IT services, SaaS solutions, and digital marketing</li>
           </ul>
         </Card>
       </div>

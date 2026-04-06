@@ -8,12 +8,13 @@ export default function SiteFooter() {
         <div>
           <p className={styles.title}>Aldanex Group</p>
           <p className={styles.copy}>
-            Next.js rebuild foundation for property and IT services.
+            Property, IT, and digital services in Finland.
           </p>
         </div>
         <div className={styles.meta}>
-          <p>Built for the Aldanex.fi migration roadmap.</p>
-          <p>Phase 3 design system baseline.</p>
+          <p>+358417587388</p>
+          <p>info@aldanex.fi</p>
+          <p>Vipelenkuja 4, Rauha, 55320, Finland</p>
         </div>
       </Container>
     </footer>
