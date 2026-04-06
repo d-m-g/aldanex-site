@@ -49,20 +49,12 @@
 }
 
 .actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--space-3);
+  display: grid;
+  gap: var(--space-2);
+  justify-items: start;
 }
 
 .note {
   color: var(--color-muted);
   font-size: 0.92rem;
-}
-
-@media (min-width: 900px) {
-  .card {
-    grid-template-columns: 1fr 1.1fr;
-    align-items: start;
-  }
 }

@@ -6,8 +6,8 @@ export default function SiteFooter() {
     <footer className={styles.footer}>
       <Container className={styles.inner}>
         <p className={styles.companies}>
-          Aldanex Group OY, Y-tunnus 2743281-5 | Aldanex Pro OY, Y-tunnus 3213166-2 |
-          Aldanex OY, Y-tunnus 3280836-2
+          Aldanex Group OY, Y-tunnus 2743281-5 | Aldanex Pro OY, Y-tunnus
+          3213166-2 | Aldanex OY, Y-tunnus 3280836-2
         </p>
         <div className={styles.contactRow}>
           <a className={styles.link} href="tel:+358417587388">

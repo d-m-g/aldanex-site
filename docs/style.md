@@ -15,7 +15,7 @@ R:32
 G:45
 B:77
 
-footer-text: 
+footer-text:
 92
 143
 175

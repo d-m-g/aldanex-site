@@ -133,36 +133,84 @@ export const homepageServices = [
     title: "Rauhan Marinella Village Hotel",
     description:
       "Hotel accommodation close to Lake Saimaa with fully equipped apartments in peaceful forest surroundings.",
+    details: [
+      "Close to Lake Saimaa",
+      "Peaceful forest surroundings",
+      "Comfortable apartment-style stays",
+    ],
     href: "https://rauhanvillage.com/",
+    imageSrc: "/assets/service-hotel.svg",
+    imageAlt: "Illustrated Aldanex hospitality property near Lake Saimaa",
+    ctaLabel: "DETAILS",
   },
   {
     title: "Property. Short-term rent",
     description:
       "Daily rental apartments in the Imatra and Lappeenranta area with multiple apartment sizes available.",
+    details: [
+      "Daily stays in Imatra",
+      "Lappeenranta apartment options",
+      "Multiple apartment sizes",
+    ],
     href: "/property",
+    imageSrc: "/assets/service-short-rent.svg",
+    imageAlt: "Illustrated short-term rental apartment buildings",
+    ctaLabel: "DETAILS",
   },
   {
     title: "Property. Long-term rent",
     description:
       "Monthly apartment rental options in Helsinki and Imatra for longer-stay residents and tenants.",
+    details: [
+      "Monthly rental options",
+      "Helsinki and Imatra locations",
+      "For residents and long-stay tenants",
+    ],
     href: "/property",
+    imageSrc: "/assets/service-long-rent.svg",
+    imageAlt: "Illustrated long-term residential rental building",
+    ctaLabel: "CONTACT US",
   },
   {
     title: "Maintenance",
     description:
       "House checks, post-box care, bill handling, and other maintenance support for private homes in Finland.",
+    details: [
+      "Regular house checks",
+      "Post-box and bill handling",
+      "Support for private homes in Finland",
+    ],
     href: "/property",
+    imageSrc: "/assets/service-maintenance.svg",
+    imageAlt: "Illustrated home maintenance and care service",
+    ctaLabel: "DETAILS",
   },
   {
     title: "Digital marketing",
     description:
       "SEO and social media marketing support covering audits, content, creatives, campaigns, and optimization.",
+    details: [
+      "SEO audits and strategy",
+      "Content, creatives, and campaigns",
+      "Ongoing optimization support",
+    ],
     href: "/it",
+    imageSrc: "/assets/service-marketing.svg",
+    imageAlt: "Illustrated digital marketing charts and strategy dashboard",
+    ctaLabel: "DETAILS",
   },
   {
     title: "IT Services",
     description:
       "Complex SaaS solutions, website development, consulting, analytics, and technical support.",
+    details: [
+      "SaaS and website development",
+      "Consulting and analytics",
+      "Technical support and delivery",
+    ],
     href: "/it",
+    imageSrc: "/assets/service-it.svg",
+    imageAlt: "Illustrated IT services and software interface",
+    ctaLabel: "DETAILS",
   },
 ];
