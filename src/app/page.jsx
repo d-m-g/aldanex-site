@@ -1,23 +1,19 @@
-import styles from "./page.module.css";
+import HeroSection from "../sections/HeroSection";
+import FocusSection from "../sections/FocusSection";
+import ContactPreviewSection from "../sections/ContactPreviewSection";
+import { createPageMetadata } from "../lib/seo";
+
+export const metadata = createPageMetadata({
+  title: "Home",
+  path: "/",
+});
 
 export default function HomePage() {
   return (
-    <main className={styles.page}>
-      <section className={styles.card}>
-        <h1>Aldanex</h1>
-        <p>
-          This is your simple Next.js website template. Edit{" "}
-          <code>src/app/page.jsx</code> to start building.
-        </p>
-        <a
-          className={styles.button}
-          href="https://nextjs.org/docs"
-          target="_blank"
-          rel="noreferrer"
-        >
-          Learn Next.js
-        </a>
-      </section>
+    <main>
+      <HeroSection />
+      <FocusSection />
+      <ContactPreviewSection />
     </main>
   );
 }

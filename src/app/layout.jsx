@@ -1,14 +1,18 @@
 import "./globals.css";
+import SiteFooter from "../components/SiteFooter";
+import SiteHeader from "../components/SiteHeader";
+import { defaultMetadata } from "../lib/seo";
 
-export const metadata = {
-  title: "Aldanex Site",
-  description: "Aldanex.fi rebuilt with Next.js and React.",
-};
+export const metadata = defaultMetadata;
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }

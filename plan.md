@@ -72,20 +72,20 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 
 **Goal:** Reusable UI primitives and consistent page shell.
 
-- [ ] Implement root layout (`src/app/layout.*`) with:
-  - [ ] header
-  - [ ] footer
-  - [ ] container/grid rules
-  - [ ] responsive nav
-- [ ] Build reusable UI primitives:
-  - [ ] Button
-  - [ ] Card
-  - [ ] Section
-  - [ ] Container
-  - [ ] Heading
-  - [ ] Input
-  - [ ] Textarea
-- [ ] Add shared SEO helper utilities in `src/lib`.
+- [x] Implement root layout (`src/app/layout.*`) with:
+  - [x] header
+  - [x] footer
+  - [x] container/grid rules
+  - [x] responsive nav
+- [x] Build reusable UI primitives:
+  - [x] Button
+  - [x] Card
+  - [x] Section
+  - [x] Container
+  - [x] Heading
+  - [x] Input
+  - [x] Textarea
+- [x] Add shared SEO helper utilities in `src/lib`.
 
 **Deliverable:** Reusable component baseline used by at least one page.
 
