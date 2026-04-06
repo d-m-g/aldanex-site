@@ -5,7 +5,8 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 
 ## MVP Scope (Phase 1 Release)
 - Homepage
-- Core business pages (about/services/contact)
+- Core business pages (`property` and `it`)
+- Homepage contact section + working contact form
 - Working contact form
 - SEO baseline (metadata, sitemap, robots)
 - Production deployment and monitoring
@@ -29,7 +30,7 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 ### 1) Discovery and Inventory
 **Goal:** Create a complete migration source of truth.
 
-- [ ] Crawl all existing WP URLs (including legal, hidden nav/footer links).
+- [x] Crawl all existing WP URLs (including legal, hidden nav/footer links).
 - [ ] Build content inventory sheet per page:
   - [ ] H1/H2 structure
   - [ ] body copy
@@ -86,9 +87,9 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 
 - [ ] Build homepage (`src/app/page.*`) using modular sections.
 - [ ] Build core static routes:
-  - [ ] `src/app/about/page.*`
-  - [ ] `src/app/services/page.*`
-  - [ ] `src/app/contact/page.*`
+  - [ ] `src/app/property/page.*`
+  - [ ] `src/app/it/page.*`
+- [ ] Rebuild the homepage contact section from the current WP site.
 - [ ] Migrate approved copy directly into code (hardcoded-first).
 - [ ] Ensure internal links and nav states are correct on all breakpoints.
 
@@ -145,11 +146,11 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 ---
 
 ## Definition of Done (MVP)
-- [ ] Homepage + about/services/contact live in production.
+- [ ] Homepage + `property` + `it` live in production.
 - [ ] Contact form submits successfully and is verified end-to-end.
 - [ ] SEO essentials in place (metadata, sitemap, robots, social previews).
 - [ ] No critical QA bugs open.
-- [ ] Redirects from legacy WP URLs are active.
+- [ ] Redirects from legacy WP URLs are active, including old `/saas/` mapping if `it` is used in the rebuild.
 - [ ] Team handoff notes and backlog for Phase 2 are documented.
 
 ## Phase 2 Backlog (after MVP)
