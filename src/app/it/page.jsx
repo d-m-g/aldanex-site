@@ -28,7 +28,7 @@ export default function ItPage() {
       </section>
       <PageHero
         description="Aldanex IT services span complex SaaS delivery, digital marketing, analytics, consulting, and technical support for clients in Europe and the US."
-        primaryCta={{ href: "/#contact", label: "Start a conversation" }}
+        primaryCta={{ href: "/#contact", label: "Contact Us" }}
         secondaryCta={{ href: "/#services", label: "See all services" }}
         stats={[
           "React, Angular, Vue, Python, and Node.js",

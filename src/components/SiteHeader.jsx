@@ -10,7 +10,6 @@ import styles from "./SiteHeader.module.css";
 const navItems = [
   { href: "/property", label: "Property" },
   { href: "/it", label: "IT services" },
-  { href: "/#contact", label: "Contact" },
 ];
 
 export default function SiteHeader() {
@@ -100,7 +99,7 @@ export default function SiteHeader() {
           </nav>
         </div>
         <Button className={styles.cta} href="/#contact" variant="secondary">
-          Start a conversation
+          Contact Us
         </Button>
       </Container>
     </header>
