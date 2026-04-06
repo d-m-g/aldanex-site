@@ -10,7 +10,7 @@ import styles from "./SiteHeader.module.css";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/property", label: "Property" },
-  { href: "/it", label: "IT" },
+  { href: "/it", label: "IT services" },
   { href: "/#contact", label: "Contact" },
 ];
 

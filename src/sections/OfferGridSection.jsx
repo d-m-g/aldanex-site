@@ -7,10 +7,16 @@ import styles from "./OfferGridSection.module.css";
 export default function OfferGridSection({ eyebrow, title, intro, items }) {
   return (
     <Section tone="accent">
-      <div className={`${styles.intro} ${!intro ? styles.introCompact : ""}`}>
-        <Heading eyebrow={eyebrow}>{title}</Heading>
-        {intro ? <p className={styles.copy}>{intro}</p> : null}
-      </div>
+      {title || eyebrow || intro ? (
+        <div className={`${styles.intro} ${!intro ? styles.introCompact : ""}`}>
+          {title ? (
+            <Heading eyebrow={eyebrow}>{title}</Heading>
+          ) : eyebrow ? (
+            <p className={styles.eyebrowOnly}>{eyebrow}</p>
+          ) : null}
+          {intro ? <p className={styles.copy}>{intro}</p> : null}
+        </div>
+      ) : null}
       <div className={styles.grid}>
         {items.map((item) => (
           <Card

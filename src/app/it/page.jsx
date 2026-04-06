@@ -23,12 +23,11 @@ export default function ItPage() {
           fill
           priority
           sizes="100vw"
-          src="/assets/service-it.svg"
+          src="/assets/SERVICES/What_is_Information_Technology.webp"
         />
       </section>
       <PageHero
         description="Aldanex IT services span complex SaaS delivery, digital marketing, analytics, consulting, and technical support for clients in Europe and the US."
-        eyebrow="IT"
         primaryCta={{ href: "/#contact", label: "Start a conversation" }}
         secondaryCta={{ href: "/#services", label: "See all services" }}
         stats={[
@@ -41,7 +40,6 @@ export default function ItPage() {
       <OfferGridSection
         eyebrow="Capabilities"
         items={itCapabilities}
-        title="Current Aldanex IT and digital service lines"
       />
       <ContactCalloutSection />
     </main>

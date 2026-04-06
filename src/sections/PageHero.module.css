@@ -1,5 +1,6 @@
 .section {
   padding-top: var(--space-7);
+  padding-bottom: var(--space-6);
 }
 
 .layout {
@@ -8,18 +9,33 @@
   align-items: start;
 }
 
+.content {
+  display: grid;
+  gap: var(--space-5);
+  align-content: start;
+}
+
 .description {
   max-width: 44rem;
-  margin-top: var(--space-4);
+  margin-top: 0;
   color: var(--color-muted);
   font-size: 1.05rem;
+}
+
+.eyebrowOnly {
+  margin-bottom: 0;
+  color: var(--color-accent-dark);
+  font-size: clamp(0.95rem, 1.4vw, 1.2rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .actions {
   display: flex;
   flex-wrap: wrap;
   gap: var(--space-3);
-  margin-top: var(--space-5);
+  margin-top: 0;
 }
 
 .card {

@@ -15,10 +15,14 @@ export default function PageHero({
   return (
     <Section className={styles.section}>
       <div className={styles.layout}>
-        <div>
-          <Heading as="h1" eyebrow={eyebrow}>
-            {title}
-          </Heading>
+        <div className={styles.content}>
+          {title ? (
+            <Heading as="h1" eyebrow={eyebrow}>
+              {title}
+            </Heading>
+          ) : eyebrow ? (
+            <p className={styles.eyebrowOnly}>{eyebrow}</p>
+          ) : null}
           <p className={styles.description}>{description}</p>
           <div className={styles.actions}>
             {primaryCta ? (
