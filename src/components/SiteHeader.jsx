@@ -8,7 +8,6 @@ import Container from "./Container";
 import styles from "./SiteHeader.module.css";
 
 const navItems = [
-  { href: "/", label: "Home" },
   { href: "/property", label: "Property" },
   { href: "/it", label: "IT services" },
   { href: "/#contact", label: "Contact" },
@@ -68,28 +67,38 @@ export default function SiteHeader() {
         </a>
       </Container>
       <Container className={styles.inner}>
-        <Link className={styles.brand} href="/">
-          <Image
-            alt="Aldanex logo"
-            className={styles.brandLogo}
-            height={44}
-            src="/assets/LOGO5.jpg"
-            width={44}
-          />
-          <span className={styles.brandText}>Aldanex Group</span>
-        </Link>
-        <nav aria-label="Primary" className={styles.nav}>
-          {navItems.map((item) => (
-            <Link
-              className={styles.link}
-              data-active={isActive(item.href)}
-              href={item.href}
-              key={item.label}
-            >
-              {item.label}
+        <div className={styles.mainNavGroup}>
+          <div className={styles.brandWrap}>
+            <Link className={styles.logoLink} href="/">
+              <Image
+                alt="Aldanex logo"
+                className={styles.brandLogo}
+                height={44}
+                src="/assets/LOGO5.jpg"
+                width={44}
+              />
             </Link>
-          ))}
-        </nav>
+            <Link
+              className={styles.brand}
+              data-active={pathname === "/"}
+              href="/"
+            >
+              <span className={styles.brandText}>Aldanex Group</span>
+            </Link>
+          </div>
+          <nav aria-label="Primary" className={styles.nav}>
+            {navItems.map((item) => (
+              <Link
+                className={styles.link}
+                data-active={isActive(item.href)}
+                href={item.href}
+                key={item.label}
+              >
+                {item.label}
+              </Link>
+            ))}
+          </nav>
+        </div>
         <Button className={styles.cta} href="/#contact" variant="secondary">
           Start a conversation
         </Button>
