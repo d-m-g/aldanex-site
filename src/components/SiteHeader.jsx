@@ -23,7 +23,7 @@ export default function SiteHeader() {
     }
 
     if (href === "/#contact") {
-      return pathname === "/";
+      return false;
     }
 
     return pathname === href;
