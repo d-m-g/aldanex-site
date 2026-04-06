@@ -1,8 +1,10 @@
+import Image from "next/image";
 import ContactCalloutSection from "../../sections/ContactCalloutSection";
 import OfferGridSection from "../../sections/OfferGridSection";
 import PageHero from "../../sections/PageHero";
 import { itCapabilities } from "../../lib/content";
 import { createPageMetadata } from "../../lib/seo";
+import styles from "./page.module.css";
 
 export const metadata = createPageMetadata({
   title: "IT services",
@@ -14,6 +16,16 @@ export const metadata = createPageMetadata({
 export default function ItPage() {
   return (
     <main>
+      <section aria-label="IT visual banner" className={styles.banner}>
+        <Image
+          alt="IT services visual"
+          className={styles.bannerImage}
+          fill
+          priority
+          sizes="100vw"
+          src="/assets/service-it.svg"
+        />
+      </section>
       <PageHero
         description="Aldanex IT services span complex SaaS delivery, digital marketing, analytics, consulting, and technical support for clients in Europe and the US."
         eyebrow="IT"
