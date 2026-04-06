@@ -1,6 +1,6 @@
 # aldanex-site
 
-Simple React website template powered by Vite.
+Simple Next.js website template.
 
 ## Getting started
 
@@ -13,5 +13,5 @@ npm run dev
 
 ```bash
 npm run build
-npm run preview
+npm run start
 ```
