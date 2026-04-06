@@ -1,9 +1,9 @@
 .band {
   display: grid;
-  gap: 1px;
+  gap: 0;
   overflow: hidden;
   border-radius: var(--radius-card);
-  background: rgba(255, 255, 255, 0.16);
+  background: rgb(103, 157, 156);
   box-shadow: var(--shadow-soft);
 }
 
@@ -12,7 +12,7 @@
   place-items: center;
   min-height: 11rem;
   padding: var(--space-5);
-  background: rgb(103, 157, 156);
+  background: transparent;
   text-align: center;
 }
 
