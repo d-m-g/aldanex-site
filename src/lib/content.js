@@ -170,7 +170,7 @@ export const homepageServices = [
     href: "/property",
     imageSrc: "/assets/SERVICES/SERVICE_long.jpg",
     imageAlt: "Long-term rental property exterior",
-    ctaLabel: "CONTACT US",
+    ctaLabel: "DETAILS",
   },
   {
     title: "Maintenance",
