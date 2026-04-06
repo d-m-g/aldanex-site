@@ -9,17 +9,18 @@ export default function SiteFooter() {
           Aldanex Group OY, Y-tunnus 2743281-5 | Aldanex Pro OY, Y-tunnus 3213166-2 |
           Aldanex OY, Y-tunnus 3280836-2
         </p>
-        <p className={styles.copy}>© All rights reserved 2026</p>
-        <p>
+        <div className={styles.contactRow}>
           <a className={styles.link} href="tel:+358417587388">
             +358417587388
           </a>
-        </p>
-        <p>
+          <span aria-hidden="true" className={styles.dot}>
+            •
+          </span>
           <a className={styles.link} href="mailto:info@aldanex.fi">
             info@aldanex.fi
           </a>
-        </p>
+        </div>
+        <p className={styles.copy}>© All rights reserved 2026</p>
       </Container>
     </footer>
   );
