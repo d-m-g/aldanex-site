@@ -1,6 +1,8 @@
 .footer {
   padding: var(--space-7) 0;
+  background: var(--color-footer);
   border-top: 1px solid var(--color-line);
+  color: var(--color-surface-strong);
 }
 
 .inner {
@@ -15,7 +17,7 @@
 
 .copy,
 .meta {
-  color: var(--color-muted);
+  color: rgba(255, 255, 255, 0.76);
 }
 
 @media (min-width: 768px) {

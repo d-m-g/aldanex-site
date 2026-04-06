@@ -14,7 +14,7 @@
   padding: 0.95rem 1rem;
   border: 1px solid rgba(19, 34, 56, 0.16);
   border-radius: 18px;
-  background: rgba(255, 255, 255, 0.88);
+  background: var(--color-surface-strong);
   color: var(--color-ink);
   transition:
     border-color 180ms ease,
@@ -27,9 +27,9 @@
 }
 
 .control:focus {
-  border-color: rgba(197, 106, 61, 0.75);
+  border-color: rgba(71, 133, 132, 0.75);
   outline: none;
-  box-shadow: 0 0 0 4px rgba(197, 106, 61, 0.14);
+  box-shadow: 0 0 0 4px rgba(71, 133, 132, 0.14);
 }
 
 .textarea {

@@ -30,8 +30,8 @@
 
 .primary {
   background: var(--color-accent);
-  color: #fff8f3;
-  box-shadow: 0 18px 35px rgba(197, 106, 61, 0.28);
+  color: var(--color-surface-strong);
+  box-shadow: 0 18px 35px rgba(71, 133, 132, 0.22);
 }
 
 .primary:hover {
@@ -39,11 +39,11 @@
 }
 
 .secondary {
-  background: rgba(255, 253, 248, 0.84);
+  background: var(--color-surface-soft);
   border-color: var(--color-line);
   color: var(--color-ink);
 }
 
 .secondary:hover {
-  background: #ffffff;
+  background: var(--color-surface-strong);
 }
