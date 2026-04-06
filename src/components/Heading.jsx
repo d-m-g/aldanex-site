@@ -7,7 +7,9 @@ export default function Heading({
   className = "",
   children,
 }) {
-  const wrapperClassName = [styles.wrapper, className].filter(Boolean).join(" ");
+  const wrapperClassName = [styles.wrapper, className]
+    .filter(Boolean)
+    .join(" ");
 
   return (
     <div className={wrapperClassName} data-align={align}>
