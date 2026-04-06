@@ -19,8 +19,11 @@ export default function SiteFooter() {
           <a className={styles.link} href="mailto:info@aldanex.fi">
             info@aldanex.fi
           </a>
+          <span aria-hidden="true" className={styles.dot}>
+            •
+          </span>
+          <span className={styles.copy}>© All rights reserved 2026</span>
         </div>
-        <p className={styles.copy}>© All rights reserved 2026</p>
       </Container>
     </footer>
   );

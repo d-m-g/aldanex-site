@@ -44,6 +44,8 @@
   font-size: 0.86rem;
   letter-spacing: 0.015em;
   opacity: 0.95;
+  white-space: nowrap;
+  font-weight: 600;
 }
 
 .link {
