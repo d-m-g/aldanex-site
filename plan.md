@@ -1,9 +1,11 @@
 # Aldanex.fi Rebuild Execution Plan
 
 ## Objective
+
 Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, then expand to full parity.
 
 ## MVP Scope (Phase 1 Release)
+
 - Homepage
 - Core business pages (`property` and `it`)
 - Homepage contact section + working contact form
@@ -12,11 +14,13 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 - Production deployment and monitoring
 
 ## Working Assumptions
+
 - Content strategy: hardcoded content first, CMS later.
 - Tech stack: Next.js App Router + React.
 - Deployment target: Vercel (or equivalent if required).
 
 ## Team Roles (recommended)
+
 - Product/Content: page inventory, copy approval, prioritization.
 - Design/UI: visual rules, responsive behavior, asset quality.
 - Frontend: components, routes, metadata, form UX.
@@ -28,6 +32,7 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 ## Phase-by-Phase TODOs
 
 ### 1) Discovery and Inventory
+
 **Goal:** Create a complete migration source of truth.
 
 - [x] Crawl all existing WP URLs (including legal, hidden nav/footer links).
@@ -44,25 +49,27 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 **Deliverable:** Signed-off inventory sheet + finalized MVP page list.
 
 ### 2) Project Foundation
+
 **Goal:** Ensure maintainable project structure and standards.
 
-- [ ] Initialize/confirm Next.js App Router project structure.
-- [ ] Create/confirm directories:
-  - [ ] `src/app`
-  - [ ] `src/components`
-  - [ ] `src/sections`
-  - [ ] `src/lib`
-  - [ ] `public/assets`
-- [ ] Set global styling rules and design tokens.
+- [x] Initialize/confirm Next.js App Router project structure.
+- [x] Create/confirm directories:
+  - [x] `src/app`
+  - [x] `src/components`
+  - [x] `src/sections`
+  - [x] `src/lib`
+  - [x] `public/assets`
+- [x] Set global styling rules and design tokens.
 - [ ] Configure quality checks:
-  - [ ] ESLint
-  - [ ] Prettier
+  - [x] ESLint
+  - [x] Prettier
   - [ ] TypeScript strict mode (if/when TS is enabled)
-  - [ ] CI build/lint checks
+  - [x] CI build/lint checks
 
 **Deliverable:** Green CI checks and documented project conventions.
 
 ### 3) Design System and Layout
+
 **Goal:** Reusable UI primitives and consistent page shell.
 
 - [ ] Implement root layout (`src/app/layout.*`) with:
@@ -83,6 +90,7 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 **Deliverable:** Reusable component baseline used by at least one page.
 
 ### 4) MVP Pages and Content Migration
+
 **Goal:** Ship business-critical pages with approved content.
 
 - [ ] Build homepage (`src/app/page.*`) using modular sections.
@@ -96,6 +104,7 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 **Deliverable:** Full MVP page set feature-complete and review-ready.
 
 ### 5) Contact Form + SEO + Performance Baseline
+
 **Goal:** Functional lead capture and production-grade fundamentals.
 
 - [ ] Implement contact endpoint (`src/app/api/contact/route.*`).
@@ -109,6 +118,7 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 **Deliverable:** Contact flow working and SEO/performance baseline complete.
 
 ### 6) QA and WP Parity Validation
+
 **Goal:** Ensure correctness before launch.
 
 - [ ] Visual parity pass against current WP site.
@@ -129,6 +139,7 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 **Deliverable:** QA sign-off + redirect map approved.
 
 ### 7) Launch and Stabilization
+
 **Goal:** Safe go-live and post-launch confidence.
 
 - [ ] Configure production deployment (Vercel or target platform).
@@ -146,6 +157,7 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 ---
 
 ## Definition of Done (MVP)
+
 - [ ] Homepage + `property` + `it` live in production.
 - [ ] Contact form submits successfully and is verified end-to-end.
 - [ ] SEO essentials in place (metadata, sitemap, robots, social previews).
@@ -154,6 +166,7 @@ Rebuild `aldanex.fi` from WordPress to Next.js + React with an MVP-first scope, 
 - [ ] Team handoff notes and backlog for Phase 2 are documented.
 
 ## Phase 2 Backlog (after MVP)
+
 - CMS integration for editable content.
 - Blog/news migration.
 - Enhanced structured data and technical SEO.

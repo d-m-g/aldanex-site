@@ -6,8 +6,8 @@ export default function HomePage() {
       <section className={styles.card}>
         <h1>Aldanex</h1>
         <p>
-          This is your simple Next.js website template. Edit <code>src/app/page.jsx</code>{" "}
-          to start building.
+          This is your simple Next.js website template. Edit{" "}
+          <code>src/app/page.jsx</code> to start building.
         </p>
         <a
           className={styles.button}
