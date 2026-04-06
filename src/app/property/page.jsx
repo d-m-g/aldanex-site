@@ -31,7 +31,6 @@ export default function PropertyPage() {
       />
       <OfferGridSection
         eyebrow="What we offer"
-        intro="This page migrates the current WordPress property content into reusable cards so it is ready for further refinement without losing the existing service scope."
         items={propertyHighlights}
         title="Current Aldanex property offerings"
       />

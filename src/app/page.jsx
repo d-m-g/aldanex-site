@@ -1,8 +1,8 @@
 import CompanySection from "../sections/CompanySection";
 import HomeServicesSection from "../sections/HomeServicesSection";
 import HeroSection from "../sections/HeroSection";
-import FocusSection from "../sections/FocusSection";
 import ContactPreviewSection from "../sections/ContactPreviewSection";
+import StatsBandSection from "../sections/StatsBandSection";
 import { createPageMetadata } from "../lib/seo";
 
 export const metadata = createPageMetadata({
@@ -17,8 +17,8 @@ export default function HomePage() {
     <main>
       <HeroSection />
       <HomeServicesSection />
-      <FocusSection />
       <CompanySection />
+      <StatsBandSection />
       <ContactPreviewSection />
     </main>
   );

@@ -4,9 +4,21 @@
   margin-bottom: var(--space-6);
 }
 
+.introCompact {
+  margin-bottom: var(--space-4);
+}
+
 .copy {
   max-width: 44rem;
   color: var(--color-muted);
+}
+
+.eyebrowOnly {
+  color: var(--color-accent-dark);
+  font-size: clamp(0.95rem, 1.4vw, 1.2rem);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
 }
 
 .grid {
@@ -42,5 +54,9 @@
 @media (min-width: 900px) {
   .grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .cardFullWidth {
+    grid-column: 1 / -1;
   }
 }

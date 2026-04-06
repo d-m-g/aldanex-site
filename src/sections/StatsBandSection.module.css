@@ -1,0 +1,37 @@
+.band {
+  display: grid;
+  gap: 0;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  background: rgb(103, 157, 156);
+  box-shadow: var(--shadow-soft);
+}
+
+.item {
+  display: grid;
+  place-items: center;
+  min-height: 11rem;
+  padding: var(--space-5);
+  background: transparent;
+  text-align: center;
+}
+
+.text {
+  max-width: 14rem;
+  color: rgb(255, 255, 255);
+  font-size: clamp(1.15rem, 2vw, 1.45rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+@media (min-width: 768px) {
+  .band {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1080px) {
+  .band {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}

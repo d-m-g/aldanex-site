@@ -5,6 +5,31 @@ export const companyFacts = [
   "Property and IT expertise under one group",
 ];
 
+export const homepageStats = [
+  "We speak 3 languages",
+  "Originated in 2016 year",
+  "More than 40 apartments for rent",
+  "Professional team",
+];
+
+export const groupCompanies = [
+  {
+    title: "Aldanex Group OY",
+    description:
+      "The wider group company for Rauhan Marinella Village, cottages and apartments, IT services, and property maintenance.",
+  },
+  {
+    title: "Aldanex Pro OY",
+    description:
+      "Focused on property long-term rent and practical real-estate operations within the Aldanex group.",
+  },
+  {
+    title: "Aldanex OY",
+    description:
+      "Supports IT services and digital marketing work for clients that need technical and growth support.",
+  },
+];
+
 export const contactInfo = {
   phone: "+358417587388",
   email: "info@aldanex.fi",
@@ -100,32 +125,93 @@ export const itCapabilities = [
       "Website development",
       "IT consulting and technical support",
     ],
+    fullWidth: true,
   },
 ];
 
 export const homepageServices = [
   {
-    title: "Property stays and rentals",
+    title: "Rauhan Marinella Village Hotel",
     description:
-      "Short-term and long-term apartment offerings in key Finnish locations, plus Rauhan Marinella Village hospitality.",
-    href: "/property",
+      "Hotel accommodation close to Lake Saimaa with fully equipped apartments in peaceful forest surroundings.",
+    details: [
+      "Close to Lake Saimaa",
+      "Peaceful forest surroundings",
+      "Comfortable apartment-style stays",
+    ],
+    href: "https://rauhanvillage.com/",
+    imageSrc: "/assets/SERVICES/SERVICE_HOTEL.jpg",
+    imageAlt: "Rauhan Marinella Village Hotel building exterior",
+    ctaLabel: "DETAILS",
   },
   {
-    title: "Property maintenance",
+    title: "Property. Short-term rent",
     description:
-      "Ongoing care for private homes in Finland, including checks, post-box service, and bill handling.",
+      "Daily rental apartments in the Imatra and Lappeenranta area with multiple apartment sizes available.",
+    details: [
+      "Daily stays in Imatra",
+      "Lappeenranta apartment options",
+      "Multiple apartment sizes",
+    ],
     href: "/property",
+    imageSrc: "/assets/SERVICES/SERVICE_short.jpg",
+    imageAlt: "Short-term rental property exterior",
+    ctaLabel: "DETAILS",
   },
   {
-    title: "IT and SaaS delivery",
+    title: "Property. Long-term rent",
     description:
-      "Full-stack software development, cloud deployment, and longer-term team augmentation for ambitious products.",
-    href: "/it",
+      "Monthly apartment rental options in Helsinki and Imatra for longer-stay residents and tenants.",
+    details: [
+      "Monthly rental options",
+      "Helsinki and Imatra locations",
+      "For residents and long-stay tenants",
+    ],
+    href: "/property",
+    imageSrc: "/assets/SERVICES/SERVICE_long.jpg",
+    imageAlt: "Long-term rental property exterior",
+    ctaLabel: "CONTACT US",
+  },
+  {
+    title: "Maintenance",
+    description:
+      "House checks, post-box care, bill handling, and other maintenance support for private homes in Finland.",
+    details: [
+      "Regular house checks",
+      "Post-box and bill handling",
+      "Support for private homes in Finland",
+    ],
+    href: "/property",
+    imageSrc: "/assets/SERVICES/SERVICE_maintanance.jpg",
+    imageAlt: "Maintenance service property exterior",
+    ctaLabel: "DETAILS",
   },
   {
     title: "Digital marketing",
     description:
-      "SEO and social media marketing services built around strategy, creatives, campaigns, and optimization.",
+      "SEO and social media marketing support covering audits, content, creatives, campaigns, and optimization.",
+    details: [
+      "SEO audits and strategy",
+      "Content, creatives, and campaigns",
+      "Ongoing optimization support",
+    ],
     href: "/it",
+    imageSrc: "/assets/SERVICES/SERVICE_MARKETING.jpg",
+    imageAlt: "Digital marketing service visual",
+    ctaLabel: "DETAILS",
+  },
+  {
+    title: "IT Services",
+    description:
+      "Complex SaaS solutions, website development, consulting, analytics, and technical support.",
+    details: [
+      "SaaS and website development",
+      "Consulting and analytics",
+      "Technical support and delivery",
+    ],
+    href: "/it",
+    imageSrc: "/assets/SERVICES/SERVICE_SERVICES.jpg",
+    imageAlt: "IT services visual",
+    ctaLabel: "DETAILS",
   },
 ];

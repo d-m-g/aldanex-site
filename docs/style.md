@@ -14,3 +14,8 @@ footer:
 R:32
 G:45
 B:77
+
+footer-text:
+92
+143
+175

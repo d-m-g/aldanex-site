@@ -15,21 +15,27 @@ export default function PageHero({
   return (
     <Section className={styles.section}>
       <div className={styles.layout}>
-        <div>
-          <Heading as="h1" eyebrow={eyebrow}>
-            {title}
-          </Heading>
+        <div className={styles.content}>
+          {title ? (
+            <Heading as="h1" eyebrow={eyebrow}>
+              {title}
+            </Heading>
+          ) : eyebrow ? (
+            <p className={styles.eyebrowOnly}>{eyebrow}</p>
+          ) : null}
           <p className={styles.description}>{description}</p>
-          <div className={styles.actions}>
-            {primaryCta ? (
-              <Button href={primaryCta.href}>{primaryCta.label}</Button>
-            ) : null}
-            {secondaryCta ? (
-              <Button href={secondaryCta.href} variant="secondary">
-                {secondaryCta.label}
-              </Button>
-            ) : null}
-          </div>
+          {primaryCta || secondaryCta ? (
+            <div className={styles.actions}>
+              {primaryCta ? (
+                <Button href={primaryCta.href}>{primaryCta.label}</Button>
+              ) : null}
+              {secondaryCta ? (
+                <Button href={secondaryCta.href} variant="secondary">
+                  {secondaryCta.label}
+                </Button>
+              ) : null}
+            </div>
+          ) : null}
         </div>
         <Card className={styles.card}>
           <p className={styles.cardTitle}>At a glance</p>

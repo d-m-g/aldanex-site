@@ -1,4 +1,3 @@
-import Button from "../components/Button";
 import Card from "../components/Card";
 import Heading from "../components/Heading";
 import Section from "../components/Section";
@@ -9,24 +8,17 @@ export default function HeroSection() {
     <Section className={styles.section}>
       <div className={styles.layout}>
         <div className={styles.copy}>
-          <p className={styles.kicker}>Welcome to Aldanex Group</p>
+          <p className={styles.kicker}>Aldanex Group</p>
           <Heading as="h1">
-            Property, IT, and digital services under one group.
+            Property, maintenance, IT services, and digital marketing.
           </Heading>
           <p className={styles.lead}>
-            Aldanex Group brings together short-term and long-term rentals,
-            property maintenance, SaaS delivery, and digital marketing into one
-            focused company presence.
+            A single group presence for hospitality, rental apartments,
+            maintenance support, SaaS development, and marketing services.
           </p>
-          <div className={styles.actions}>
-            <Button href="/#contact">Contact us</Button>
-            <Button href="/property" variant="secondary">
-              Explore property
-            </Button>
-          </div>
         </div>
         <Card className={styles.panel}>
-          <p className={styles.panelLabel}>Current focus areas</p>
+          <p className={styles.panelLabel}>Main directions</p>
           <ul className={styles.points}>
             <li>Rauhan Marinella Village and apartment rentals</li>
             <li>Property maintenance for houses in Finland</li>
