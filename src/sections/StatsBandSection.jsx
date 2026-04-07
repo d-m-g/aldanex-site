@@ -4,13 +4,15 @@ import styles from "./StatsBandSection.module.css";
 
 export default function StatsBandSection() {
   return (
-    <Section>
-      <div className={styles.band}>
-        {homepageStats.map((stat) => (
-          <div className={styles.item} key={stat}>
-            <p className={styles.text}>{stat}</p>
-          </div>
-        ))}
+    <Section className={styles.section}>
+      <div className={styles.panel}>
+        <div className={styles.band}>
+          {homepageStats.map((stat) => (
+            <div className={styles.item} key={stat}>
+              <p className={styles.text}>{stat}</p>
+            </div>
+          ))}
+        </div>
       </div>
     </Section>
   );

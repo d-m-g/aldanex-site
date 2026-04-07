@@ -1,37 +1,83 @@
+.section {
+  padding-top: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.panel {
+  width: min(100%, 1200px);
+  margin: 0 auto;
+  padding: 2.5rem 2rem;
+  border-radius: 36px;
+  background: rgb(103, 157, 156);
+}
+
 .band {
   display: grid;
-  gap: 0;
-  overflow: hidden;
-  border-radius: var(--radius-card);
-  background: rgb(103, 157, 156);
-  box-shadow: var(--shadow-soft);
+  gap: 1.5rem 1.75rem;
 }
 
 .item {
   display: grid;
   place-items: center;
-  min-height: 11rem;
-  padding: var(--space-5);
-  background: transparent;
+  min-height: 6.5rem;
   text-align: center;
 }
 
 .text {
-  max-width: 14rem;
+  max-width: 12rem;
   color: rgb(255, 255, 255);
-  font-size: clamp(1.15rem, 2vw, 1.45rem);
-  font-weight: 700;
-  line-height: 1.25;
+  font-size: clamp(1.1rem, 1.5vw, 1.45rem);
+  font-weight: 800;
+  line-height: 1.2;
+  letter-spacing: 0;
 }
 
 @media (min-width: 768px) {
   .band {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
+
+  .panel {
+    padding: 2.9rem 2.5rem;
+  }
 }
 
 @media (min-width: 1080px) {
   .band {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .panel {
+    padding: 3rem 3.5rem;
+  }
+
+  .item {
+    min-height: 7rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  .panel {
+    padding: 2rem 1.25rem;
+    border-radius: 28px;
+  }
+
+  .band {
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  .item {
+    min-height: 4.75rem;
+  }
+
+  .text {
+    max-width: 14rem;
+    font-size: 1.05rem;
   }
 }

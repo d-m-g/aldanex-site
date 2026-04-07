@@ -35,10 +35,7 @@ export default function ItPage() {
         ]}
         title="IT services"
       />
-      <OfferGridSection
-        eyebrow="Capabilities"
-        items={itCapabilities}
-      />
+      <OfferGridSection eyebrow="Capabilities" items={itCapabilities} />
       <ContactCalloutSection />
     </main>
   );

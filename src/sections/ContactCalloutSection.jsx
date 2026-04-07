@@ -22,7 +22,7 @@ export default function ContactCalloutSection() {
           <p>{contactInfo.phone}</p>
           <p>{contactInfo.email}</p>
           <p>{contactInfo.address}</p>
-          <Button href="/#contact">Open contact form</Button>
+          <Button href="/#contact">Contact us</Button>
         </div>
       </Card>
     </Section>

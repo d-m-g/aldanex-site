@@ -1,8 +1,10 @@
+import Image from "next/image";
 import ContactCalloutSection from "../../sections/ContactCalloutSection";
 import OfferGridSection from "../../sections/OfferGridSection";
 import PageHero from "../../sections/PageHero";
 import { propertyHighlights } from "../../lib/content";
 import { createPageMetadata } from "../../lib/seo";
+import styles from "./page.module.css";
 
 export const metadata = createPageMetadata({
   title: "Property",
@@ -14,6 +16,16 @@ export const metadata = createPageMetadata({
 export default function PropertyPage() {
   return (
     <main>
+      <section aria-label="Property visual banner" className={styles.banner}>
+        <Image
+          alt="Property services visual"
+          className={styles.bannerImage}
+          fill
+          priority
+          sizes="100vw"
+          src="/assets/SERVICES/SERVICE_long.jpg"
+        />
+      </section>
       <PageHero
         description="Aldanex property services cover hospitality, short-term rentals, long-term rentals, and ongoing maintenance support for homes in Finland."
         eyebrow="Property"
