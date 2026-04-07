@@ -1,0 +1,17 @@
+.banner {
+  position: relative;
+  width: 100%;
+  height: clamp(90px, 14vw, 130px);
+  overflow: hidden;
+  background: linear-gradient(
+    90deg,
+    rgba(71, 133, 132, 0.2),
+    rgba(32, 45, 77, 0.2)
+  );
+  border-bottom: 1px solid rgba(32, 45, 77, 0.12);
+}
+
+.bannerImage {
+  object-fit: cover;
+  object-position: center;
+}

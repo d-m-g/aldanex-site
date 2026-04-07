@@ -16,13 +16,15 @@
 .grid {
   display: grid;
   gap: 4.5rem 2.25rem;
-  align-items: start;
+  align-items: stretch;
 }
 
 .item {
   position: relative;
   display: grid;
+  grid-template-rows: auto 1fr;
   padding-bottom: 0.5rem;
+  height: 100%;
 }
 
 .imageWrap {
@@ -42,6 +44,8 @@
 }
 
 .panel {
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
   width: calc(100% - 2rem);
   margin: -4.5rem auto 0;
   padding: 1.7rem 1.6rem 1.9rem;
@@ -77,6 +81,7 @@
   gap: 0.45rem;
   margin: 0 0 1.6rem;
   padding-left: 1.1rem;
+  align-content: start;
 }
 
 .listItem {
@@ -88,6 +93,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  justify-self: center;
   min-width: 10.25rem;
   margin: 0 auto;
   padding: 0.9rem 1.35rem;
