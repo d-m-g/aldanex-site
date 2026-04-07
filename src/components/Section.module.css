@@ -6,6 +6,10 @@
   background: var(--color-surface);
 }
 
+.solidTeal {
+  background: rgb(103, 157, 156);
+}
+
 .accent {
   position: relative;
 }
