@@ -15,16 +15,19 @@ export const homepageStats = [
 export const groupCompanies = [
   {
     title: "Aldanex Group OY",
+    icon: "truck",
     description:
       "The wider group company for Rauhan Marinella Village, cottages and apartments, IT services, and property maintenance.",
   },
   {
     title: "Aldanex Pro OY",
+    icon: "house",
     description:
       "Focused on property long-term rent and practical real-estate operations within the Aldanex group.",
   },
   {
     title: "Aldanex OY",
+    icon: "laptop",
     description:
       "Supports IT services and digital marketing work for clients that need technical and growth support.",
   },
