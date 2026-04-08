@@ -30,9 +30,21 @@ export default function SiteHeader() {
   return (
     <header className={styles.header}>
       <Container className={styles.topBar}>
-        <div className={styles.infoItem}>
-          <span className={styles.infoText}>Welcome to aldanex group</span>
-        </div>
+        <a
+          className={`${styles.infoItem} ${styles.addressItem}`}
+          href="https://maps.google.com/?q=Vipelenkuja+4+Rauha+55320+Finland"
+          rel="noreferrer"
+          target="_blank"
+        >
+          <span aria-hidden="true" className={styles.icon}>
+            <svg viewBox="0 0 24 24">
+              <path d="M12 2.75A7.25 7.25 0 0 0 4.75 10c0 4.85 6.13 10.7 6.39 10.95a1.25 1.25 0 0 0 1.72 0c.26-.25 6.39-6.1 6.39-10.95A7.25 7.25 0 0 0 12 2.75Zm0 9.75A2.5 2.5 0 1 1 12 7.5a2.5 2.5 0 0 1 0 5Z" />
+            </svg>
+          </span>
+          <span className={`${styles.infoText} ${styles.addressText}`}>
+            Vipelenkuja 4, Rauha, 55320, Finland
+          </span>
+        </a>
         <a className={styles.infoItem} href="tel:+358417587388">
           <span aria-hidden="true" className={styles.icon}>
             <svg viewBox="0 0 24 24">
@@ -48,21 +60,6 @@ export default function SiteHeader() {
             </svg>
           </span>
           <span className={styles.infoText}>info@aldanex.fi</span>
-        </a>
-        <a
-          className={`${styles.infoItem} ${styles.addressItem}`}
-          href="https://maps.google.com/?q=Vipelenkuja+4+Rauha+55320+Finland"
-          rel="noreferrer"
-          target="_blank"
-        >
-          <span aria-hidden="true" className={styles.icon}>
-            <svg viewBox="0 0 24 24">
-              <path d="M12 2.75A7.25 7.25 0 0 0 4.75 10c0 4.85 6.13 10.7 6.39 10.95a1.25 1.25 0 0 0 1.72 0c.26-.25 6.39-6.1 6.39-10.95A7.25 7.25 0 0 0 12 2.75Zm0 9.75A2.5 2.5 0 1 1 12 7.5a2.5 2.5 0 0 1 0 5Z" />
-            </svg>
-          </span>
-          <span className={`${styles.infoText} ${styles.addressText}`}>
-            Vipelenkuja 4, Rauha, 55320, Finland
-          </span>
         </a>
       </Container>
       <Container className={styles.inner}>
