@@ -2,6 +2,11 @@ const siteUrl = "https://aldanex.fi";
 
 export const defaultMetadata = {
   metadataBase: new URL(siteUrl),
+  icons: {
+    icon: "/assets/LOGO5.jpg",
+    shortcut: "/assets/LOGO5.jpg",
+    apple: "/assets/LOGO5.jpg",
+  },
   title: {
     default: "Aldanex Group",
     template: "%s | Aldanex Group",
