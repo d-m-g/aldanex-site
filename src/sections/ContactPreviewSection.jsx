@@ -11,7 +11,7 @@ export default function ContactPreviewSection() {
     <Section id="contact">
       <Card className={styles.card}>
         <div className={styles.copy}>
-          <Heading eyebrow="Contact" as="h2">
+          <Heading as="h2">
             Contact us
           </Heading>
           <p className={styles.text}>
