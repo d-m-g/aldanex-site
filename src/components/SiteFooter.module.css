@@ -73,14 +73,22 @@
     align-items: stretch;
   }
 
+  /* nowrap forced a horizontal scroll strip on narrow screens; let it wrap */
   .companies {
     font-size: 0.86rem;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding-bottom: 0.2rem;
+    white-space: normal;
   }
 
   .contactRow {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
     width: 100%;
+    padding: 0.7rem 0.75rem;
+    border-radius: 1rem;
+  }
+
+  .dot {
+    display: none;
   }
 }
