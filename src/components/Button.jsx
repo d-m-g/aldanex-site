@@ -14,7 +14,7 @@ export default function Button({
     .join(" ");
 
   if (href) {
-    const isExternal = href.startsWith("http");
+    const isExternal = /^(https?:|mailto:|tel:)/.test(href);
 
     if (isExternal) {
       return (
