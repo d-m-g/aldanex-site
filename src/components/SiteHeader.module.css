@@ -198,13 +198,26 @@
     text-align: left;
   }
 
+  /* nowrap + flex-shrink:0 children turned this row into a scroll strip;
+     wrap onto a second line instead of scrolling sideways */
   .inner {
+    flex-wrap: wrap;
+    overflow-x: visible;
     gap: var(--space-2);
     justify-content: flex-start;
   }
 
+  /* hoist brand and nav into .inner so all three wrap as one row */
   .mainNavGroup {
+    display: contents;
+  }
+
+  .brandWrap {
     gap: var(--space-2);
+  }
+
+  .nav {
+    flex-wrap: wrap;
   }
 
   .link,
